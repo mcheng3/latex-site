@@ -22,7 +22,10 @@
     </nav>
 
     <div style="padding: 0px 110px;">
-      <h1>What is <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/800px-LaTeX_logo.svg.png" alt="LaTeX" align="middle" width="15%" height="15%">?</h1>
+      <h1> Try entering this equation in a text editor like Microsoft Word or OpenOffice Libre:</h1>
+      <img src="equation.png">
+      <h3> It's fairly troublesome, right?</h3><br>
+      <h1>Try <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/800px-LaTeX_logo.svg.png" alt="LaTeX" align="middle" width="15%" height="15%">!</h1>
       <ul>
     	<li>LaTeX is a markup language.</li>
     	<li>Formats plain text into a styled document.</li>
@@ -54,12 +57,57 @@
 \maketitle
 Hello World!                       This is a \LaTeX\ document % Multiple whitespace is ignored
 \end{document}          % Tells LaTeX the document has finished</pre>
+    <ul>
+      <li>
+        Every document starts with the <code>\documentclass</code> command. This command 
+        sets the base formatting style for the entire document. In this case, the argument given to the command is <code>article</code>, so LaTeX renders the document in the style of an article. It also takes font size as an option.
+        <ul>
+          <li>
+          This is one of the strongest features of LaTeX, as it allows basic document templates to be created. Organizations like journals, universities, or companies might create their own document class so that all documents they publish will be in the same format. Unlike an editor like Microsoft Word, where each document has to be manually formatted to fit the specifications, you can simply change the document class in LaTeX.
+          </li>
+        </ul>
+      </li>
+      <li>
+        The <code>\begin</code> command marks the beginning of a new environment. This tells LaTeX to render everything between the <code>\begin</code> and <code>\end</code> commands in the given <code>document</code> environment.
+      </li>
+      <li>
+        The <code>\maketitle</code> command creates the title of the document using information given in the preamble.
+    </ul>
     </div>
     <div class="col-sm-4">
       <img src="doc0.png" >
     </div>
     </div>
-    
+    <h1> Another Example</h1>
+    <div class="row">
+      <div class="col-sm-7">
+      <pre class="prettyprint lang-tex">
+\documentclass[12pt]{article}
+\usepackage{tipa} % import package TIPA
+\title{Lorem Ipsum}
+\author{John Doe}
+\date{March 2018}
+
+\begin{document}
+\maketitle
+\Large
+\begin{IPA}
+["d\textrhookrevepsilon{}.l@nd ""{}wi:.v\textrhookschwa{}]
+\end{IPA}\\
+@
+
+\[\lim_{x \to 2} \frac{f(x)}{\cos^2\wtheta} = \pi \cdot \phi_0\]
+
+Lorem ipsum dolor sit amet, ne duo meis tritani, ne mea nostrud expetenda repudiare. His phaedrum voluptatum te, sea ne tincidunt voluptatibus. Has ad oporteat probatus consetetur, vim et case altera delenit, veritus urbanitas vim no. Summo democritum pro te, sea ne movet corpora gloriatur, duo cu errem affert adipisci. 
+
+Case tritani accusamus at mea, malis expetenda vel cu. Cu est unum mucius, graecis voluptua antiopam usu at, qui impedit constituto te. Ad aeque explicari appellantur mel, decore cotidieque vel ne. Est quaeque salutatus eu. No corpora indoctum reformidans per, justo debitis epicuri eum ex.
+
+\end{document}</pre>
+    </div>
+    <div class="col-sm-5">
+    <img src="canvas.png" width="98%" height="98%">
+    </div>
+  </div>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=tex&amp;skin=desert"></script>
   </body>
 
