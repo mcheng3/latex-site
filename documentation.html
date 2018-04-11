@@ -2,9 +2,9 @@
 <html>
 
   <head>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body style="background-color: #ccced1;">
@@ -26,53 +26,86 @@
       Here are some examples of formatting choices:
       <ul>
 	<li>Font-size:</li>
-	<pre class="prettyprint lang-tex">
-	  \begin{tiny} hello \end{tiny}
-	  \begin{small} hello \end{small}
-	  \begin{large} hello \end{large}
-	  \begin{huge} hello \end{huge}
-	</pre>
-	<li>Italicize:</li>
-	<pre class="prettyprint lang-tex">
-	  \textit{word}
-	</pre>
-	<li>Bold:</li>
-	<pre class="prettyprint lang-tex">
-	  \textbf{word}
-	</pre>
-	<li>Center text:</li>
-	<pre class="prettyprint lang-tex">
-	  \begin{center} Title \end{center}
-	</pre>
-      </ul>
-      
-      <h1>Packages</h1>
-      <ul>
-	<li>Packages in latex are similar to java and python packages.</li>
-	<li>At the beginning of your code, insert:</li>
-	<pre class="prettyprint lang-tex">
-	  \usepackage{}
-	</pre>
-	<li>Here are some examples of how to use packages:</li>
-	<pre class="prettyprint lang-tex">
-	  \usepackage[top=1in, bottom=2in]{geometry} #sets up margins
+	<div class="row">
+	  <div class="col-sm-6">
+	    <pre class="prettyprint lang-tex">
+	      \begin{tiny} hello \end{tiny}
+	      \begin{small} hello \end{small}
+	      \begin{large} hello \end{large}
+	      \begin{Large} hello \end{Large}
+	      \begin{LARGE} hello \end{LARGE}
+	      \begin{huge} hello \end{huge}
+	    </pre>
+	  </div>
+	  <div class="col-sm-6">
+	    <img src="fontsize.png">
+	  </div>
+	</div>
+	<div class="row">
+	  
+	  <li>Italicize:</li>
+	  <div class="col-sm-6">
+	    <pre class="prettyprint lang-tex">
+	      \textit{This sentence is italicized.}
+	    </pre>
+	  </div>
+	  <div class="col-sm-6">
+	    <img src="italicized.png">
+	  </div>
+	</div>
+	<div class="row">
+	  
+	  <li>Bold:</li>
+	  <div class="col-sm-6">
+	    <pre class="prettyprint lang-tex">
+	      \textbf{This sentence is bolded.}
+	    </pre>
+	  </div>
+	  <div class="col-sm-6">
+	    <img src="bold.png">
+	  </div>
+	</div>
+	<div class="row">
+	  <li>Center text:</li>
+	  <div class="col-sm-6">
+	    <pre class="prettyprint lang-tex">
+	      \begin{center} Title \end{center}
+	    </pre>
+	  </div>
+	  <div class="col-sm-6">
+	    <img src="center.png">
+	  </div>
+	</div>
+   
+    </ul>
+    
+    <h1>Packages</h1>
+    <ul>
+      <li>Packages in latex are similar to java and python packages.</li>
+      <li>At the beginning of your code, insert:</li>
+      <pre class="prettyprint lang-tex">
+	\usepackage{}
+      </pre>
+      <li>Here are some examples of how to use packages:</li>
+      <pre class="prettyprint lang-tex">
+	\usepackage[top=1in, bottom=2in]{geometry} #sets up margins
 
-	  \usepackage{siunitx} #special math characters
-	  \SI{5}{\micro\meter}
+	\usepackage{siunitx} #special math characters
+	\SI{5}{\micro\meter}
 
-	  \usepackage{amsfonts} #additional special characters
-	  $\mathbb{N}$
-	  $\mathbb{R}$
- 
-	  \usepackage{graphicx} #inserts an image
-	  \includegraphics{image.png}
-	</pre>
-      </ul>
-      <h1>Special Characters</h1>
-      <img src="http://www.andy-roberts.net/res/writing/latex/symbols.png">
-      <br>
-    </div>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=tex&amp;skin=desert"></script>
-  </body>
+	\usepackage{amsfonts} #additional special characters
+	$\mathbb{N}$
+	$\mathbb{R}$
+	
+	\usepackage{graphicx} #inserts an image
+	\includegraphics{image.png}
+      </pre>
+    </ul>
+    <h1>Special Characters</h1>
+    <img src="http://www.andy-roberts.net/res/writing/latex/symbols.png">
+    <br>
+</div>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=tex&amp;skin=desert"></script>
+</body>
 
 </html>
