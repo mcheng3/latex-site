@@ -7,7 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
-  <body>
+  <body style="background-color: #ccced1;">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
 	<div class="navbar-header">
@@ -21,17 +21,46 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div style="padding: 0px 110px;">
       <h1>What is <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/800px-LaTeX_logo.svg.png" alt="LaTeX" align="middle" width="15%" height="15%">?</h1>
       <ul>
-	<li>LaTeX is a markup language.</li>
-	<li>Formats plain text into a styled document.</li>
-	<li>Allows you to focus on the content of your document by taking care of the formatting for you. This is unlike a "What You See Is What You Get" editor, where the user has to    directly format the entire document.</li>
-	<li>LaTeX is especially useful for documents which require heavy use of special characters.</li>
+    	<li>LaTeX is a markup language.</li>
+    	<li>Formats plain text into a styled document.</li>
+    	<li>Allows you to focus on the content of your document by taking care of the formatting for you. This is unlike a "What You See Is What You Get" editor, where the user has to    directly format the entire document.</li>
+    	<li>LaTeX is especially useful for documents which require heavy use of special characters.</li>
       </ul>
+      <h1>Basic Syntax</h1>
+      <pre class="prettyprint lang-tex">
+\commandname[option0,option1,...]{argument0}{argument1}...
+\textbf{bolded text} this part is normal
+
+\switchname scope
+{\bfseries bolded text} this part is normal</pre>
+      <ul>
+      <li>A command takes a comma-delineated list of options, which change the behavior of the command, and a list of arguments, each surrounded by <code>{}</code>. Options are always optional, while arguments are not.</li>
+      <li>Switches act a bit differently. Switches take no arguments, but rather apply to the rest of the scope, which you can limit by surrounding it with <code>{}</code>. If not limited, the switch will take the rest of the document as the scope.</li>
+    </ul>
+    <h1>Example Document</h1>
+    <div class="row">
+      <div class="col-sm-7">
+      <pre class="prettyprint lang-tex">
+\documentclass[12pt]{article} % This defines the document class, takes options and an argument
+
+\title{My First Doc}
+\author{Michael Cheng, Tina Chen} % Preamble contains commands which affect entire document
+\date{\today}
+
+\begin{document}        % Tells LaTeX the document is beginning
+\maketitle
+Hello World!                       This is a \LaTeX\ document % Multiple whitespace is ignored
+\end{document}          % Tells LaTeX the document has finished</pre>
     </div>
-    <h1>Basic Syntax</h1>
-      
+    <div class="col-sm-4">
+      <img src="doc0.png" >
+    </div>
+    </div>
+    
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=tex&amp;skin=desert"></script>
   </body>
 
 </html>
