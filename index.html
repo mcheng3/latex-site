@@ -2,6 +2,7 @@
 <html>
 
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -72,6 +73,7 @@ Hello World!                       This is a \LaTeX\ document % Multiple whitesp
       </li>
       <li>
         The <code>\maketitle</code> command creates the title of the document using information given in the preamble.
+      </li>
     </ul>
     </div>
     <div class="col-sm-4">
@@ -96,14 +98,29 @@ Hello World!                       This is a \LaTeX\ document % Multiple whitesp
 \end{IPA}\\
 @
 
-\[\lim_{x \to 2} \frac{f(x)}{\cos^2\wtheta} = \pi \cdot \phi_0\]
+\[\lim_{x \to 2} \frac{f(x)}{\cos^2\theta} = \pi \cdot \phi_0\]
 
-Lorem ipsum dolor sit amet, ne duo meis tritani, ne mea nostrud expetenda repudiare. His phaedrum voluptatum te, sea ne tincidunt voluptatibus. Has ad oporteat probatus consetetur, vim et case altera delenit, veritus urbanitas vim no. Summo democritum pro te, sea ne movet corpora gloriatur, duo cu errem affert adipisci. 
+Lorem ipsum dolor sit amet, ne duo meis tritani, ne mea nostrud expetenda repudiare. His phaedrum
+voluptatum te, sea ne tincidunt voluptatibus. Has ad oporteat probatus consetetur, vim et case altera delenit,
+veritus urbanitas vim no. Summo democritum pro te, sea ne movet corpora gloriatur, duo cu errem affert adipisci. 
 
-Case tritani accusamus at mea, malis expetenda vel cu. Cu est unum mucius, graecis voluptua antiopam usu at, qui impedit constituto te. Ad aeque explicari appellantur mel, decore cotidieque vel ne. Est quaeque salutatus eu. No corpora indoctum reformidans per, justo debitis epicuri eum ex.
+Case tritani accusamus at mea, malis expetenda vel cu. Cu est unum mucius, graecis voluptua antiopam usu at, 
+qui impedit constituto te. Ad aeque explicari appellantur mel, decore cotidieque vel ne.
+Est quaeque salutatus eu. No corpora indoctum reformidans per, justo debitis epicuri eum ex.
 
 \end{document}</pre>
+<ul>
+      <li>
+        The <code>\usepackage</code> command imports a package for further capabilities, much akin to a Python library.
+      </li>
+      <li>
+        The <code>\begin{IPA}</code> command tells LaTeX that the environment is changing to IPA, so things should be rendered differently according to the IPA environment. For example, the <code>@</code> in the IPA environment is rendered as <code>ə</code>, but outside of it, it is rendered normally as <code>@</code>.
+      </li>
+      <li>
+        Math equations are fairly straightforward to write. Notice that it is surrounded with <code>\[ \]</code>, to denote a stand-alone equation. Imagine you were a math professor and had to type 50 similar equations in one document. Would you prefer LaTeX or Word?
+    </ul>
     </div>
+    
     <div class="col-sm-5">
     <img src="canvas.png" width="98%" height="98%">
     </div>
