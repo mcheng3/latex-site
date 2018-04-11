@@ -7,7 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
-  <body style="background-color: #ccced1;>
+  <body style="background-color: #ccced1;">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
 	<div class="navbar-header">
@@ -23,15 +23,58 @@
 
     <div class="container">
       <h1>Text Formatting</h1>
+      Here are some examples of formatting choices:
+      <ul>
+	<li>Font-size:</li>
+	<pre class="prettyprint lang-tex">
+	  \begin{tiny} hello \end{tiny}
+	  \begin{small} hello \end{small}
+	  \begin{large} hello \end{large}
+	  \begin{huge} hello \end{huge}
+	</pre>
+	<li>Italicize:</li>
+	<pre class="prettyprint lang-tex">
+	  \textit{word}
+	</pre>
+	<li>Bold:</li>
+	<pre class="prettyprint lang-tex">
+	  \textbf{word}
+	</pre>
+	<li>Center text:</li>
+	<pre class="prettyprint lang-tex">
+	  \begin{center} Title \end{center}
+	</pre>
+      </ul>
       
       <h1>Packages</h1>
+      <ul>
+	<li>Packages in latex are similar to java and python packages.</li>
+	<li>At the beginning of your code, insert:</li>
+	<pre class="prettyprint lang-tex">
+	  \usepackage{}
+	</pre>
+	<li>Here are some examples of how to use packages:</li>
+	<pre class="prettyprint lang-tex">
+	  \usepackage[top=1in, bottom=2in]{geometry} #sets up margins
+
+	  \usepackage{siunitx} #special math characters
+	  \SI{5}{\micro\meter}
+
+	  \usepackage{amsfonts} #additional special characters
+	  $\mathbb{N}$
+	  $\mathbb{R}$
+ 
+	  \usepackage{graphicx} #inserts an image
+	  \includegraphics{image.png}
+	</pre>
+      </ul>
       <h1>Special Characters</h1>
       <img src="http://www.andy-roberts.net/res/writing/latex/symbols.png">
       <br>
       <img src="https://www.mn.uio.no/astro/english/services/it/help/basic-services/latex/delimiters01.gif">
       <br>
     </div>
-
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=tex&amp;skin=desert"></script>
   </body>
 
 </html>
